@@ -37,9 +37,9 @@ passport.serializeUser(function (user,cb) {
 });
 
 passport.deserializeUser(async function (user, cb) {
-    // const dbUser = await User.findByPk(user.id);
+    //const dbUser = await User.findByPk(user.id);
     process.nextTick(function () {
-        return cb(null, cb)
+        return cb(null, user)
     });
 });
 
